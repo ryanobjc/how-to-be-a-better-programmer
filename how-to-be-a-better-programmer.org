@@ -1,0 +1,29 @@
+; -*- mode: org; -*-
+* Introduction
+** Who this is for
+** Why would you want to do this?
+* Motivation
+** Why do you want to be a better programmer?
+** Your goals
+* Cognitive tools
+  Part of any major life shift is to make it stick.  Major habits can be
+  hard to change, and hard things are hard to do, and we often have few
+  tools to help us make these changes.  Willpower is often quoted, but
+  frequently fails.  Willpower is also HARD.  
+** CFAR
+   [[http://rationality.org][The Center for Applied Rationality]] Puts on a workshop that teachs you
+   scientific approaches to improving the rationality in your life.  What 
+   is rationality?  There is a number of things:
+   - Reason better using statistical thinking (Bayes theorem)
+   - Harness your "System 1" or intuitive or fast part of your brain
+   - Do the things you want to do but aren't doing
+   - Make or break habits WITHOUT using willpower
+   - Use your emotions to help you, and diminish bad emotions.
+** Online tools to help you
+*** Google Calendar for anything temporal
+*** Emacs and org-mode to type text, organize and capture things
+*** Boomerang for gmail to send yourself email in the future
+* Programming languages
+* Systems to know
+* Tools
+
