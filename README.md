@@ -11,11 +11,24 @@ The Guide
 ---------
 
 The guide is written in a text file using ["org mode"](http://orgmode.org).  Org mode an 
-emacs plugin, and part of being a good programmer is knowing emacs.  So by reading, and maybe
+emacs plug-in, and part of being a good programmer is knowing emacs.  So by reading, and maybe
 contributing you can practice being a better programmer!
 
 If you can't/won't emacs, it's ok, the guide is still just plain text and reads easily, even on
 github.
+
+Emacs
+-----
+
+Org mode files read ok on github.  But you will get the most benefit from reading it in emacs.
+
+* Linux - Emacs is easily installed on all Linux variants (and other free *nix systems).  
+* Mac OS X - The default emacs is too old, consider installing Emacs 23 using [Home brew](http://brew.sh/).
+* Windows -  Emacs for windows exists, links wanted for the best version (psst: please fork!)
+
+Most programmers know emacs, it has a lot of benefits, and it's a fully customizable and programmable
+editor. It's one of the oldest free software projects, and all of the best programmers I have known
+have been emacs power users.
 
 Forking
 -------
