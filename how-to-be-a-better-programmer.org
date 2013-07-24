@@ -1,10 +1,46 @@
 ; -*- mode: org; -*-
 * Introduction
 ** Who this is for
-** Why would you want to do this?
+   This guide is for people who want to become better programmers.  Maybe you are already
+   a programmer and you want some help becoming better.  Maybe you aren't a programmer, or 
+   not a very good one and you want to become better. 
+
+   But what you should want is to become a BETTER programmer.  To be an AWESOME programmer.
+   This might sound obvious (or tautological) if you are reading this, but not everyone really 
+   wants to be a better programmer.  Some people want to actually "make more money", which is fine!
+   But some of the skills and techniques listed are not always easy if you have no inherent interest
+   in becoming a better programmer.  If you know how to chain your goals, this last few sentences 
+   probably doesn't apply.
+** Why would you want to do this? (Ryan's Answer)
+   I love programming, and I think its an increasingly useful skill.  It also gives me power to
+   change the world in a leveraged and effective manner.  It also has a lot in common with math,
+   meaning that I can converge on the truth.  But it also engages the intuitive brain and 
+   can harness creativity as well.  It's my "half science, half art" skill (although particular
+   subtasks waffle back and forth between these extremes).
 * Motivation
-** Why do you want to be a better programmer?
-** Your goals
+** Intro and Goals
+   It is probably important that becoming a better programmer aligns with a more basic goal in your life. 
+   If your goal is to become famous and popular, maybe programming isn't the most effective way to achieve that.
+   If your goal is to create cool things, meet awesome people and leveragedly affect the world,
+   programming might be effective for you!
+** Not a programmer
+   Maybe you are already curious and motivate, in which case you can skip to the next section.  Otherwise let me 
+   talk about why I value being a programmer.
+   
+   As a programmer, I believe it gives me a lot of leverage in an increasingly computerized world. It also
+   lets me understand how computer things work, which is more and more things.  This allows me to trouble shoot
+   the world, and helps my general sense of calmness because I know computer things aren't arbitrary.  It also
+   achieves my goal of making things, and my goal of improving my truth knowledge of the world.  Programming
+   and computer science is an engineering disicpline, a science and an art all in one.  There is room for
+   hard facts, beauty and process.  How much you get of each it up to you.
+** Already a programmer
+   If you are already a programmer, maybe you have a sneaking suspicion that you aren't the best
+   programmer that you could be.  That's ok - this is a feeling everyone has, even the best programmers.
+** Do I need to be a better programmer?
+   Maybe you aren't sure you need to be a better programmer or not, if so I suggest you read about
+   the [[http://www.paulgraham.com/avg.html]["blub paradox" - an excellent article by Paul Graham]] where he describes how to tell if you are
+   using the most powerful programming language.  If this resonates with you in any way, this guide
+   might be for you!
 * Cognitive tools
   Part of any major life shift is to make it stick.  Major habits can be
   hard to change, and hard things are hard to do, and we often have few
@@ -17,13 +53,105 @@
    - Reason better using statistical thinking (Bayes theorem)
    - Harness your "System 1" or intuitive or fast part of your brain
    - Do the things you want to do but aren't doing
+   - Take your top level goals (be a better programmer) and chain those to small goals (practice coding)
    - Make or break habits WITHOUT using willpower
    - Use your emotions to help you, and diminish bad emotions.
 ** Online tools to help you
 *** Google Calendar for anything temporal
 *** Emacs and org-mode to type text, organize and capture things
 *** Boomerang for gmail to send yourself email in the future
+* Computer Science Basics
+** Introduction
+   I view programming in two ways.  One is a series of instructions for a machine to follow in precise order
+   with some ability to control limited decisions.  But there is another level, which normally isn't as obvious
+   when you are deep in a pragmatic language like Java.
+** The Structure and Interpretation of Computer Programming
+   MIT has historically taught introduction to computer science using a book called "The Structure
+   and Interpretation of Computer Programming" (SICP).  The book teaches the conceptual basis
+   of programming.  This seems like an obvious thing to teach, but weirdly enough most intro to
+   programming focus on other things.
+*** Scheme
+   The book and class uses a programming language
+   called Scheme (a LISP variant) which is not common but it is very simple to learn.  It also has
+   a lot of feature that few other programming languages has.
+*** Book
+    You can buy the book, you can also download the book in the following formats:
+    - [[http://mitpress.mit.edu/sicp/full-text/book/book.html][HTML format]]
+    - [[https://github.com/sarabander/sicp-pdf][PDF format]]
+    - [[https://github.com/ieure/sicp][ePub for readers]]
 * Programming languages
+** Intro
+   After, or concurrently to, learning Scheme and SICP, you will need
+   to learn "production" languages.  This will be a list of such
+   programming languages in order of "should probably learn first" to
+   "most optional to learn".  This order is subjective, and that is
+   ok.  Every language has a justification for why, and therefore it
+   is up to you to accept or reject.  If you strongly disagree, that's
+   great!  Please send a pull request, and we can discuss it and make
+   the guide better for everyone!
+** Java
+   Java is the most dominant programming languages in the world right now.  It forms the foundation for
+   a large number of important technologies and also is the foundation of several other great programming
+   languages.  It's a relatively simple language, and it has concepts that are reused a lot. Java is 
+   garbage collected which helps code be less buggy.
+
+   At it's heart it is a pragmatic language, and it catches a lot of flak for that since it makes
+   trade offs people disagree with.  The trade offs weren't made in a vacuum, and understanding them
+   (beyond the scope of this) is potentially useful. 
+
+   Java also includes the Java Virtual Machine (JVM), and understanding what that is, how it works 
+   and why it's important helps you in other situations as well.  All other languages built on top of the
+   JVM are also garbage collected (including Clojure and Scala)
+*** TODO Book list
+** Clojure
+   Clojure is a LISP variant that runs on top of the JVM.  It puts forth a number of important concepts:
+   - Functional programming
+   - Immutable data structures
+   - Easier to use concurrency
+     
+   Clojure is increasing in popularity and there are many useful toolkits built on top of it.
+*** TODO Book list
+** Scala
+   Scala is a statically typed language on top of the JVM (see a pattern?).  It uses static typing to provide
+   more safety and guarentees at compile-time that your program is correct. 
+
+   Scala is very popular, and there are many useful toolkits written for it.
+*** TODO Book list
+** Go-lang
+   Go is a new programming language for doing fast and concurrent systems.  People are finding much
+   success using it to write message processing systems, HTTP servers and more.  Go is garbage collected.
+   It could be consider a successor to C.
+*** TODO Book List
+** Rust
+   Rust is a relatively new systems programming language being invented at Mozilla.  It has been designed
+   to help rewrite Firefox and is designed around explicit, but easy, control over memory.  It could be
+   considered a successor to C++.
+** Objective C
+   This is the programming language used to program for Apple user interfaces such as iPhone and Mac OS X.
+   It is mostly useful for these tasks.
+** C
+   C is the language that the Linux kernel is written in.  It's fairly low level, and many other systems
+   are written in C.  For example, Go has elements written in C.
+** C++
+   C++ is a newer language derived from C.  It is a lot more complex than most programming languages,
+   and can be hard to write bug free code in.  But many systems are written in C++.  Such as:
+   - The JVM
+   - Firefox
+   - Lots of windows
+   - Many commercial desktop apps
+   - Google's backend services
+   
+   Since it's complex, hard to learn and potentially dangerous (in terms of probability of creating
+   bugs) it is listed last.  It is helpful to know it as a lower level layer of computing however.
 * Systems to know
+** Big data systems
+*** Hadoop
+*** Cascading
+*** More
+** 
 * Tools
+** Emacs
+** IntelliJ 
+** Github
+** Git
 
