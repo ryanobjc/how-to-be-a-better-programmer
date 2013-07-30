@@ -1,4 +1,18 @@
 ; -*- mode: org; -*-
+Tip: Type 'tab' to "open" a section that has three periods after it.
+* HOW TO USE THIS GUIDE
+  1. This guide is pretty long and is part "how to" and part reference guide.  
+  2. Start by reading the [[Introduction][introduction]] to get context on who this guide is for.
+  3. Read the [[Motivation][motivation]] section to understand the WHY of becoming a better programmer.
+  4. Optionally read the [[Cognitive%20tools][cognitive tools]] section, this is more about optimizing your brain
+  5. Really START at the [[Computer%20Science%20Basics][Computer Science Basics]] section.  Do SICP.
+  6. Now start learning a programming language of your choice, from the list in [[Programming%20languages][Programming languages]]
+* HOW TO NAVIGATE WITH ORG-MODE
+  Org mode is unlike most tools you may be used to. A few keystroke tips:
+  1. This document is hierarchical with internal and external links.
+  2. Use TAB key on a star/bullet to cycle expanding/closing that section.
+  3. Links are in blue with underlines (like the web).  Type C-c C-o to open the link.
+  4. Shift-TAB will cycle ALL the sections open/closed.
 * Introduction
 ** Who this is for
    This guide is for people who want to become better programmers.  Maybe you are already
@@ -31,7 +45,7 @@
    lets me understand how computer things work, which is more and more things.  This allows me to trouble shoot
    the world, and helps my general sense of calmness because I know computer things aren't arbitrary.  It also
    achieves my goal of making things, and my goal of improving my truth knowledge of the world.  Programming
-   and computer science is an engineering disicpline, a science and an art all in one.  There is room for
+   and computer science is an engineering discipline, a science and an art all in one.  There is room for
    hard facts, beauty and process.  How much you get of each it up to you.
 ** Already a programmer
    If you are already a programmer, maybe you have a sneaking suspicion that you aren't the best
@@ -44,17 +58,17 @@
 * Cognitive tools
   Part of any major life shift is to make it stick.  Major habits can be
   hard to change, and hard things are hard to do, and we often have few
-  tools to help us make these changes.  Willpower is often quoted, but
-  frequently fails.  Willpower is also HARD.  
+  tools to help us make these changes.  Will power is often quoted, but
+  frequently fails.  Will power is also HARD.  
 ** CFAR
-   [[http://rationality.org][The Center for Applied Rationality]] Puts on a workshop that teachs you
+   [[http://rationality.org][The Center for Applied Rationality]] Puts on a workshop that teaches you
    scientific approaches to improving the rationality in your life.  What 
    is rationality?  There is a number of things:
    - Reason better using statistical thinking (Bayes theorem)
    - Harness your "System 1" or intuitive or fast part of your brain
    - Do the things you want to do but aren't doing
    - Take your top level goals (be a better programmer) and chain those to small goals (practice coding)
-   - Make or break habits WITHOUT using willpower
+   - Make or break habits WITHOUT using will power
    - Use your emotions to help you, and diminish bad emotions.
 ** Online tools to help you
 *** Google Calendar for anything temporal
@@ -113,7 +127,7 @@
 *** TODO Book list
 ** Scala
    Scala is a statically typed language on top of the JVM (see a pattern?).  It uses static typing to provide
-   more safety and guarentees at compile-time that your program is correct. 
+   more safety and guarantees at compile-time that your program is correct. 
 
    Scala is very popular, and there are many useful toolkits written for it.
 *** TODO Book list
@@ -145,13 +159,36 @@
    bugs) it is listed last.  It is helpful to know it as a lower level layer of computing however.
 * Systems to know
 ** Big data systems
-*** Hadoop
-*** Cascading
-*** More
-** 
+*** [[http://hadoop.apache.org/][Hadoop]]
+    Hadoop is the dominant distributed computing and storage system.  It has a computational component
+    based on the Map-Reduce paper by Google, and a storage component based on the GFS paper also by Google.
+    It's open source, and very very hot right now.
+*** [[http://www.cascading.org/][Cascading]]
+    A data-flow programming toolkit on top of Hadoop, Cascading lets you express your complex data
+    processing in a simpler manner.  Since all non-trivial tasks take more than 1 map-reduce job, 
+    cascading automates chaining these together.
+**** [[http://github.com/twitter/scalding/][Scalding]]
+     A Scala API for Cascading. Express your cascading programs concisely in Scala.
+**** [[http://github.com/nathanmarz/cascalog][Cascalog]]
+     A Clojure library that uses Cascading. Express your computation even more concisely in Clojure.
 * Tools
 ** Emacs
+   Classic editor that is written in lisp (e-lisp).  Highly programmable, and one of two favorite
+   editors of programmers.  
+** Vi/VIM
+   The OTHER classic editor.  I personally find it a little frustrating because of the 'mode' system whereby
+   you are either entering commands or text but not both.  It's stripped down, installed on nearly every
+   Unix system, and it is worth knowing to some extent.
 ** IntelliJ 
+   Hands down the best Java IDE out there.  If you are doing Java, do yourself a favor and download
+   IntelliJ - the community edition is free.   The "complete" edition costs, but unless you are doing
+   J2EE Java things you wont need it.
 ** Github
+   Github is basically the social network for programmer's code.  Its free for public repositories and
+   for a moderate charge you can host private repositories.  There are organizational accounts and I have
+   successfully used github for companies of ~ 20 developers.
 ** Git
-
+   Arguably the most popular source code control system out there right now.  
+* Random links
+** [[http://worrydream.com/dbx/][The Future of Programming]]
+   A nice overview and discussion about the history of programming going way way way back.
